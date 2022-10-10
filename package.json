@@ -1,0 +1,15 @@
+{
+  "name": "bookshelf",
+  "version": "1.0.0",
+  "description": "This project for completing the Sub-mission from dicoding on Frontend web amateur lessons, KEEP SPIRIT AND NEVER SURRENDER!",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "DSQL-MONGKEY"
+  },
+  "author": "Dimas Prasetyo",
+  "license": "ISC"
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bookshelf</title>
+</head>
+<body>
+
+    <div>
+        <nav id="main-nav" class="bg-transparent border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+            <div class="container flex flex-wrap xl:justify-center sm:justify-between items-center mx-auto">
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-zinc-500 ease-in-out duration-200 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="flex flex-col justify-center p-0 md:p-4 mt-4 rounded-lg border border-gray-100 md:flex-row space-x-3 md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="/" class="py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Bookshelf</a>
+                        </li>
+                        <li>
+                            <a href="./src/info.html" class="md:mr-10 py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Info</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Form input-->
+    <div id="main-page" class="w-full mx-auto">
+        <div id="form-container" class="drop-shadow-xl rounded mx-auto m-3 bg-transparent ">
+            <form action="#" id="form-input-books" class="m-5">
+                <p class="text-center font-semibold text-white" id="tagline-form">Add your new books here!</p>
+                    <br>
+                <label for="title" class="text-gray-400 mt-4">Title</label>
+                <input id="judul-buku" type="text" name="title" 
+                class="rounded drop-shadow-xl border-none w-full bg-gray-800 focus:ring-yellow-300 text-white" required> 
+                    <br>
+                <label for="penulis" class="text-gray-400 mt-4">Writer</label>
+                <input id="penulis-buku" type="text" name="penulis"
+                class="rounded drop-shadow-xl border-none w-full bg-gray-800 focus:ring-yellow-300 text-white" required> 
+                    <br>
+                <label for="tahun" class="text-gray-400 mt-4">Date</label>
+                <input id="tahun-buku" type="date" name="tahun" 
+                class="rounded drop-shadow-xl border-none w-full bg-gray-800 focus:ring-yellow-300 text-white" required>
+                    <br>
+                <label for="note-buku" class="text-gray-400 mt-4">Note (optional)</label>
+                <input id="note-buku" type="text" name="note-buku"
+                class="rounded drop-shadow-xl border-none w-full bg-gray-800 focus:ring-yellow-300 text-white">
+                    <br>
+                <input type="submit" value="Save" name="submit" id="submit" 
+                class=" rounded-full w-full mt-5 p-2 bg-green-500 hover:bg-cyan-400 rounded text-white hover:text-slate-70 ease-in-out duration-200 text-lg">
+            </form>
+        </div>
+
+        <hr class="text-center my-14 drop-shadow-xl border-zinc-800" size="10px" noshade="true">
+
+        <!-- Container books -->
+        <div id="books-report" class=" w-10/12 mx-auto flex flex-col justify-center ">
+
+            <!-- Buku belum dibaca -->
+            <div id="unreaded-books" class="sm:w-full md:w-6/12 mx-auto rounded-lg drop-shadow-xl p-3 my-2 text-center">
+                <h2 class="text-center p-1 bg-white rounded">
+                    The books haven't you read
+                </h2>
+                <div id="unread-books" class="list-books"></div>
+            </div>
+            
+            <!-- Buku sudah dibaca -->
+            <div id="readed-books" class="sm:w-full md:w-6/12 mx-auto rounded-lg drop-shadow-xl p-3  my-2 text-center">
+                <h2 class="text-center p-1 bg-white rounded">
+                    The books have you read
+                </h2>
+                <div id="read-books" class="list-books"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+</body>
+</html>

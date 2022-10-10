@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 600px) {
+    ul {
+        background: white;
+    }
+
+    ul li {
+        margin: 10px;
+    }
+    #main-page {
+        width:100%;
+    }
+    #books-report {
+        padding: 5px 5px;
+        width: 80%;
+    }
+    #readed-books {
+        width: 100%;
+    }
+    #unreaded-books {
+        width: 100%;
+    }
+}
+
+body {
+    background: black;
+}
+
+ul li a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+}
+
+#form-container {
+    width: 400px;
+}
+
+#tagline-form {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+label {
+    font-family: 'Merriweather Sans', sans-serif;
+    display: block;
+}
+
+#submit {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* Readed books */
+#readed-books {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* Unreaded books */
+#unreaded-books {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+/* Books item */
+.inner-div {
+    margin-top: 5px;
+}
+
+/* Inner books item */
+.titleBooks {
+    font-family: 'Sarabun', sans-serif;
+}
+.writerBooks {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Check Button */
+.button-check {
+    margin-left: auto;
+    curson: pointer;
+    border: none;
+}

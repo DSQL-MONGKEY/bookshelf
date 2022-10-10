@@ -1,0 +1,15 @@
+Project ini di buat berdasarkan apa yang saya pelajari dari materi dicoding frontend pemula.
+
+>>> Project ini bertujuan untuk melatih penggunaan web storage
+
+>>> Dalam skema logika project ini hampir mirip dengan app-todoList yang ada pada dicoding, sehingga kemungkinan akan ada beberapa kode atau alur logika yang mirip dengan app-todoList tersebut.
+
+>>> Project ini dibuat menggunakan javascript murni berdasarka ketentuan yang diberkan team dicoding *(ga sengaja sebelumnya pake express js, eh akhirnya ngulang hehe.)
+
+# Motivation #
+>>> Banggain orang tua *(bukan yang anggur)
+>>> GAJI GEDE
+>>> Supaya bisa kerja flexible
+>>> Jadi freelancer Programmer di perusahaan dalam/luar negeri
+>>> Bisa bantuin UMKM yang belum punya website buat usaha mereka
+>>> Bisa ngajarin ilmu yang di dapet ke orang lain yang mau belajar Programming
